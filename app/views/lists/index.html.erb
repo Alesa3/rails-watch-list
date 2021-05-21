@@ -31,15 +31,12 @@
 
 
 <div class="container">
-  <h1>My Lists</h1>
+  <h1>My lists</h1>
   <div class="cards">
     <% @lists.each do |list| %>
       <div class="card-category">
         <%= link_to list.name, list_path(list) %>
       </div>
     <% end %>
-  </div>
-  <div class="buttons my-5">
-    <%= link_to "Add a new list", new_list_path %>
   </div>
 </div>
